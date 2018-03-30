@@ -35,14 +35,24 @@ I: Landing Page
 ![first](https://s3.amazonaws.com/betajam.akamaioc.com/first.png)
 <br />
 
+
+
+
 II: Multiple way to configure proxy settings
 ![Second](https://s3.amazonaws.com/betajam.akamaioc.com/second.png)
 
 <br />
 
+
+
+
 III: Use terminal right inside your Chrome browser
 ![Third](https://s3.amazonaws.com/betajam.akamaioc.com/third.png)
 
 <br />
+
+
+
+
 IV: Setup Automated browser test tasks within the extension
 ![Fourth](https://s3.amazonaws.com/betajam.akamaioc.com/fourth.png)
