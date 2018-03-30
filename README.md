@@ -10,7 +10,8 @@ It's a powerful tool to have if you need to route traffic over to localhost reve
 * `npm install -g yez` This is the NodeJS app that the extension speaks with to pass the terminal commands you type inside the extension
 * Download this repo as a zip file and unzip it
 
-If you are having issues with the npm install, please run this command inside the root of the zip file `sudo find . -type f -name '*.js' -exec sed -i '' -e "s/process.EventEmitter/require('events')/g" {} +` - you will most probably need to run this if you have node 7.0 and above installed in your laptop.
+If you are having issues with the npm install, please run the command below inside the root of the zip file. You will most probably need to run this if you have node 7.0 and above installed in your laptop.
+`sudo find . -type f -name '*.js' -exec sed -i '' -e "s/process.EventEmitter/require('events')/g" {} +`
 
 ## Usage
 
