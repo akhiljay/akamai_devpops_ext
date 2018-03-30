@@ -1,8 +1,8 @@
 # Chrome Dev Tools Extension for Proxying requests & Accessing Terminal
 
-> This extension is a combination of two extensions 
-a) NodeJs app that kills the terminal and act as a task runner & 
-b) A Chrome proxy that routes all your browser traffic from chrome over to an IP address or hostname of your preference.
+> This chrome dev tool extension is a combination of two open sourced exts <br />
+a) NodeJs app that kills the terminal and act as a task runner & <br />
+b) A Chrome proxy that routes all your browser traffic from chrome over to an IP address or hostname of your preference. <br />
 It's a powerful tool to have if you need to route traffic over to localhost reverse proxies for testing and running browser automation taks all from within a dev tools extension.
 
 ## Installation
@@ -31,14 +31,18 @@ Yez! back-end is running. Install the Chrome extension or open http://localhost:
 
 ## Screenshots
 
-Landing Page
+I: Landing Page
 ![first](https://s3.amazonaws.com/betajam.akamaioc.com/first.png)
+<br />
 
-Multiple way to configure proxy
+II: Multiple way to configure proxy settings
 ![Second](https://s3.amazonaws.com/betajam.akamaioc.com/second.png)
 
-Use terminal right inside your Chrome browser
+<br />
+
+III: Use terminal right inside your Chrome browser
 ![Third](https://s3.amazonaws.com/betajam.akamaioc.com/third.png)
 
-Setup Automated browser test tasks within the extension
+<br />
+IV: Setup Automated browser test tasks within the extension
 ![Fourth](https://s3.amazonaws.com/betajam.akamaioc.com/fourth.png)
