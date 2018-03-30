@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DevPoPs - Concept</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="js/proxy_form_controller.js"></script>
+        <link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css">
+        <link href='css/font.css' rel='stylesheet' type='text/css'>
+        <link href='css/Yez.css' rel='stylesheet' type='text/css'>
+        <link href='css/task.css' rel='stylesheet' type='text/css'>
+        <link href='css/status.css' rel='stylesheet' type='text/css'>
+        <link href='css/nav.css' rel='stylesheet' type='text/css'>
+        <link href='css/home.css' rel='stylesheet' type='text/css'>
+        <link href='css/cwd.css' rel='stylesheet' type='text/css'>
+        <link href='css/dark.css' rel='stylesheet' type='text/css'>
+        <link href='css/popup.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class="row">
+        <div role="main" class="col-five">
+                <header>
+                        <nav data-component="nav1" style="display: block;">
+                             <a href="#" class="" title="Proxy Setting"><i class="fa fa-shield"></i>  Proxy Configuration</a>
+                        </nav>
+                    </header>
+
+               
+                <p></p>
+        
+               
+               <form id="proxyForm">
+                <!--<fieldset id="system">
+                  <legend>System Settings</legend>
+                  <input type="radio" name="proxyType" id="proxyTypeSystem" value="system">
+                  <label for="proxyTypeSystem">Use the <em>system's proxy settings</em>.</label>
+                </fieldset>-->
+                <fieldset id="direct">
+                  <legend>Direct Connection</legend>
+                  <input type="radio" name="proxyType" id="proxyTypeDirect" value="direct">
+                  <label for="proxyTypeDirect">OFF</label>
+                </fieldset>
+                <!--<fieldset id="pac_script">
+                  <legend>Automatic Configuration</legend>
+                  <input type="radio" name="proxyType" id="proxyTypeAutoconfig" value="autoconfig">
+                  <label for="proxyTypeAutoconfig">Your proxy supports <em>automatic configuration</em>.</label>
+          
+                  <section>
+                    <label for="autoconfigURL">Autoconfiguration URL (PAC file)</label>
+                    <input type="url" name="autoconfigURL" id="autoconfigURL">
+                    <input type="hidden" name="autoconfigData" id="autoconfigData">
+                  </section>
+                </fieldset>-->
+                <fieldset id="fixed_servers">
+                  <legend>Manual Proxy</legend>
+                  <input type="radio" name="proxyType" id="proxyTypeManual" value="manual">
+                  <label for="proxyTypeManual">ON</label>
+                  <section>
+                    <fieldset>
+                      <legend>HTTP</legend>
+                      <label for="proxyHostHttp">Host*</label>
+                      <select id="proxySchemeHttp" name="proxySchemeHttp">
+                        <option selected value="http">http://</option>
+                        <option value="https">https://</option>
+                        <option value="socks4">socks4://</option>
+                        <option value="socks5">socks5://</option>
+                      </select>
+                      <input type="text" name="proxyHostHttp" id="proxyHostHttp">
+          
+                      <label for="proxyPortHttp">Port*</label>
+                      <input type="text" name="proxyPortHttp" id="proxyPortHttp" class="port">
+          <p></p>
+                      <input type="checkbox" name="singleProxyForEverything" id="singleProxyForEverything">
+                      <label for="singleProxyForEverything">Use the same proxy server for all protocols</label>
+                    </fieldset>
+                    <fieldset>
+                      <legend>HTTPS</legend>
+                      <label for="proxyHostHttps">Host*</label>
+                      <select id="proxySchemeHttps" name="proxySchemeHttps">
+                        <option selected value="http">http://</option>
+                        <option value="https">https://</option>
+                        <option value="socks4">socks4://</option>
+                        <option value="socks5">socks5://</option>
+                      </select>
+                      <input type="text" name="proxyHostHttps" id="proxyHostHttps">
+          
+                      <label for="proxyPortHttps">Port*</label>
+                      <input type="text" name="proxyPortHttps" id="proxyPortHttps" class="port">
+                    </fieldset>
+                   
+                    <!--<fieldset>
+                      <legend>FTP</legend>
+                      <label for="proxyHostFtp">Host</label>
+                      <select id="proxySchemeFtp" name="proxySchemeFtp">
+                        <option selected value="http">http://</option>
+                        <option value="https">https://</option>
+                        <option value="socks4">socks4://</option>
+                        <option value="socks5">socks5://</option>
+                      </select>
+                      <input type="text" name="proxyHostFtp" id="proxyHostFtp">
+          
+                      <label for="proxyPortFtp">Port</label>
+                      <input type="text" name="proxyPortFtp" id="proxyPortFtp" class="port">
+                    </fieldset>-->
+                    <!--<fieldset>
+                      <legend>Fallback</legend>
+                      <label for="proxyHostFallback">Host</label>
+                      <select id="proxySchemeFallback" name="proxySchemeFallback">
+                        <option selected value="http">http://</option>
+                        <option value="https">https://</option>
+                        <option value="socks4">socks4://</option>
+                        <option value="socks5">socks5://</option>
+                      </select>
+                      <input type="text" name="proxyHostFallback" id="proxyHostFallback">
+          
+                      <label for="proxyPortFallback">Port</label>
+                      <input type="text" name="proxyPortFallback" id="proxyPortFallback" class="port">
+                    </fieldset>-->
+                    <fieldset>
+                      <label for="bypassList">Bypass proxy for these hosts:</label>
+                      <textarea id="bypassList" name="bypassList" placeholder="<local>,192.168.1.1/16, .example.com"></textarea>
+                    </fieldset>
+                  </section>
+                </fieldset>
+                <input type="submit" value="Save proxy settings"><p></p>
+                <em>Fields marked * are required, when you click save you should see a popup that says proxy settings are enabled</em>
+                <!--<button value="incognito">Configure incognito window settings.</button>-->
+               </form>
+        </div>
+ 
+
+
+
+
+
+        <div role="main" class="col-six">
+    	<div class="content">
+            <header>
+                <div data-component="status">
+                    <i class="fa fa-flash"></i><span class="status">Status: disconnected (1 retry)</span>
+                    <div class="info">Connection to <code>http://<% host %>:<% port %></code> failed. <br />It seems that <code>yez</code> Node.js module is missing.<br />Try running <code>npm install -g yez</code>.<br />When the installation finishes type <code>yez</code> and hit <i>Enter</i>.</div>
+                </div>
+                <div data-placeholder="nav"></div>
+            </header>
+            <section data-component="content"></section>
+        </div>
+    </div>
+    </div>
+
+        <script src="js/utils/Extend.js"></script>
+        <script src="js/vendors/socket.io.js"></script>
+        <script src="js/vendors/absurd.organic.min.js"></script>
+        <script src="js/vendors/absurd.min.js"></script>
+        <script src="js/vendors/ansi_up.js"></script>
+        <script src="js/vendors/keypress-2.0.2.min.js"></script>
+        <script src="js/utils/misc.js"></script>
+        <script src="js/components/Status.js"></script>
+        <script src="js/components/Nav.js"></script>
+        <script src="js/components/Content.js"></script>
+        <script src="js/components/Task.js"></script>
+        <script src="js/components/Home.js"></script>
+        <script src="js/components/CWD.js"></script>
+        <script src="js/components/Editor.js"></script>
+        <script src="js/utils/Autocomplete.js"></script>
+        <script src="js/utils/History.js"></script>
+        <script src="js/Yez.js"></script>
+        <script src="js/popup.js"></script>
+        <div class="footer">
+            <p>Credits to <a href="https://github.com/krasimir/yez">Krasimir</a> for building the awesome Yez extension and the Google Chrome team for proxy extension examples</p>
+        </div>
+    </body>
+</html>

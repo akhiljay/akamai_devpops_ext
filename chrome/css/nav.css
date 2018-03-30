@@ -1,0 +1,104 @@
+[data-component="nav"] {
+  height: 100%;
+  overflow: hidden;
+}
+
+[data-component="nav1"] {
+  height: 100%;
+  overflow: hidden;
+}
+
+[data-component="nav"] a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 8px;
+  color: #111;
+  overflow: hidden;
+  text-align: center;
+  border: 0;
+  background: transparent;
+}
+
+[data-component="nav1"] a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 8px;
+  color: #111;
+  overflow: hidden;
+  text-align: center;
+  border: 0;
+  background: transparent;
+}
+
+[data-component="nav"] a:hover {
+  background: #D5D5D5;
+}
+
+[data-component="nav1"] a:hover {
+  background: #D5D5D5;
+}
+
+
+[data-component="nav"] .task {
+  box-sizing: border-box;
+}
+
+
+[data-component="nav1"] .task {
+  box-sizing: border-box;
+}
+
+
+[data-component="nav"] .task.current {
+  padding: 4px 7px 5px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+
+
+[data-component="nav1"] .task.current {
+  padding: 4px 7px 5px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+
+[data-component="nav"] .toHome {
+  padding: 4px 8px;
+  display: block;
+  width: 60px;
+  float: left;
+}
+
+
+[data-component="nav1"] .toHome {
+  padding: 4px 8px;
+  display: block;
+  width: 60px;
+  float: left;
+}
+
+
+[data-component="nav"] .add {
+  background: none;
+  border-bottom: none;
+}
+
+
+[data-component="nav1"] .add {
+  background: none;
+  border-bottom: none;
+}
+
+
+[data-component="nav"] .add-task,
+[data-component="nav"] .add-terminal  {
+  float: right;
+}
+
+
+[data-component="nav1"] .add-task,
+[data-component="nav1"] .add-terminal  {
+  float: right;
+}

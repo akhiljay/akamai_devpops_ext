@@ -1,0 +1,45 @@
+{
+  "name": "devpops",
+  "version": "2.1.0",
+  "homepage": "https://betajam.akamaioc.com",
+  "description": "Chrome extension which acts as task runner + browser proxy",
+  "main": "./node/index.js",
+  "author": {
+    "name": "Akhil Jayaprakash",
+    "email": "ajayapra@akamai.com",
+    "url": "http://betajam.akamaioc.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-prebuilt": "0.37.6",
+    "http-server": "0.9.0",
+    "open": "0.0.5",
+    "ps-tree": "0.0.3",
+    "socket.io": "0.9.16",
+    "spawn-args": "0.0.2",
+    "yargs": "4.6.0"
+  },
+  "devDependencies": {
+    "expect.js": "0.3.1",
+    "grunt": "0.4.1",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-watch": "0.4.4"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "task",
+    "runner"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bin": {
+    "yez": "./node/index.js"
+  },
+  "scripts": {
+    "test": "mocha ./node/tests --reporter spec",
+    "start": "node ./node/index.js"
+  }
+}
