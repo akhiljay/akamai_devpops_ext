@@ -54,6 +54,10 @@ function ProxyErrorHandler() {
     handleOnRequest_: function(request, sender, sendResponse) {
       if (request.type === 'getError') {
         sendResponse({result: this.getErrorDetails()});
+        console.log(result);
+        console.log(ErrorDetails);
+
+        
       } else if (request.type === 'clearError') {
         this.clearErrorDetails();
         sendResponse({result: true});
@@ -70,6 +74,7 @@ function ProxyErrorHandler() {
     handleError_: function(details) {
       var RED = [255, 0, 0, 255];
       var YELLOW = [255, 205, 0, 255];
+      console.log(details.error);
   
       // Badge the popup icon.
       var color = details.fatal ? RED : YELLOW;
@@ -81,6 +86,7 @@ function ProxyErrorHandler() {
   
       // Store the error for display in the popup.
       this.lastError_ = JSON.stringify(details);
+      console.log(this.lastError_);
     },
   
   
@@ -91,6 +97,7 @@ function ProxyErrorHandler() {
      */
     getErrorDetails: function() {
       return this.lastError_;
+      console.log(details.lastError_);
     },
   
   

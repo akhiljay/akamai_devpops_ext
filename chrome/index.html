@@ -4,6 +4,7 @@
         <title>DevPoPs - Concept</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script src="js/proxy_form_controller.js"></script>
+        <script src="js/proxy_error_handler.js"></script>
         <link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css">
         <link href='css/font.css' rel='stylesheet' type='text/css'>
         <link href='css/Yez.css' rel='stylesheet' type='text/css'>
@@ -87,7 +88,7 @@
                       <input type="text" name="proxyPortHttps" id="proxyPortHttps" class="port">
                     </fieldset>
                    
-                    <!--<fieldset>
+                    <fieldset>
                       <legend>FTP</legend>
                       <label for="proxyHostFtp">Host</label>
                       <select id="proxySchemeFtp" name="proxySchemeFtp">
@@ -100,8 +101,8 @@
           
                       <label for="proxyPortFtp">Port</label>
                       <input type="text" name="proxyPortFtp" id="proxyPortFtp" class="port">
-                    </fieldset>-->
-                    <!--<fieldset>
+                    </fieldset>
+                    <fieldset>
                       <legend>Fallback</legend>
                       <label for="proxyHostFallback">Host</label>
                       <select id="proxySchemeFallback" name="proxySchemeFallback">
@@ -114,7 +115,7 @@
           
                       <label for="proxyPortFallback">Port</label>
                       <input type="text" name="proxyPortFallback" id="proxyPortFallback" class="port">
-                    </fieldset>-->
+                    </fieldset>
                     <fieldset>
                       <label for="bypassList">Bypass proxy for these hosts:</label>
                       <textarea id="bypassList" name="bypassList" placeholder="<local>,192.168.1.1/16, .example.com"></textarea>
@@ -123,7 +124,7 @@
                 </fieldset>
                 <input type="submit" value="Save proxy settings"><p></p>
                 <em>Fields marked * are required, when you click save you should see a popup that says proxy settings are enabled</em>
-                <!--<button value="incognito">Configure incognito window settings.</button>-->
+                <button value="incognito">Configure incognito window settings.</button>
                </form>
         </div>
  
