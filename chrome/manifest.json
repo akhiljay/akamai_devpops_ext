@@ -16,13 +16,14 @@
         "storage",
         "<all_urls>",
         "proxy",
-        "webrequest"
+        "webRequest",
+        "webRequestBlocking"
     ],
     "background": {
       "scripts": ["js/background.js", "js/proxy_form_controller.js", "js/proxy_error_handler.js"],
-      "persistent": false
+      "persistent": true
     },
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_security_policy": "script-src 'self' 'unsafe-eval' object-src 'self'",
     "devtools_page": "devtools.html",
     "content_scripts": [
         {
