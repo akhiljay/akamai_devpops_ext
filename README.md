@@ -10,11 +10,11 @@ It's a powerful tool to have if you need to route traffic over to localhost reve
 * `npm install -g yez` This is the NodeJS app that the extension speaks with to pass the terminal commands you type inside the extension
 * Download this repo as a zip file and unzip it
 
-> if you get the error below 
-/usr/local/lib/node_modules/devtools-terminal/node_modules/socket.io/lib/store.js:35
-Store.prototype.__proto__ = EventEmitter.prototype;
-                                          ^
-Then please visit the socket.io./lib folder via terminal and run the command below. This will replace "EventEmitter" usage with the "require event", use of EventEmitter has been deprecated since Node 7
+> if you get the error below <br />
+/usr/local/lib/node_modules/devtools-terminal/node_modules/socket.io/lib/store.js:35 <br />
+Store.prototype.__proto__ = EventEmitter.prototype; <br />
+                                          ^ <br />
+Then please visit the socket.io./lib folder via terminal and run the command below. This will replace "EventEmitter" usage with the "require event", use of EventEmitter has been deprecated since Node 7 <br />
 * `sudo find . -type f -name '*.js' -exec sed -i '' -e "s/process.EventEmitter/require('events')/g" {} +`
 
 ## Usage
