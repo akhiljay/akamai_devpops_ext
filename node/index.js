@@ -336,4 +336,4 @@ io.sockets.on('connection', function (socket) {
 
 reportingProcesses();
 
-console.log('Yez! back-end is running. Install the Chrome extension or open http://localhost:' + httpPort);
+console.log('devpops_ext! back-end is running. Install the Chrome extension or open http://localhost:' + httpPort);
