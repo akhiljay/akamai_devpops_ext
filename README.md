@@ -1,9 +1,10 @@
 # Chrome Dev Tools Extension for Proxying requests & Accessing Terminal
 
-> This chrome dev tool extension is a combination of two open sourced exts <br />
-a) NodeJs app that kills the terminal and act as a task runner & <br />
-b) A Chrome proxy that routes all your browser traffic from chrome over to an IP address or hostname of your preference. <br />
-It's a powerful tool to have if you need to route traffic over to localhost reverse proxies for testing and running browser automation taks all from within a dev tools extension.
+> This chrome dev tool extension is a combination of three open sourced exts <br />
+
+1. A NodeJs app that enabled terminal access within chrome dev tools, so you can invoke PAPI and other Akamai APIs directly from the terminal. <br />
+2. A Chrome proxy that routes all your browser traffic from chrome over to an IP address or hostname of your preference. It's a powerful tool to have if you need to route traffic over to localhost reverse proxies for testing and running browser automation taks all from within a dev tools extension.<br/>
+3. Adds Akamai pragma headers automatically to all the requests so it can help you debug your issues.
 
 ## Installation
 
