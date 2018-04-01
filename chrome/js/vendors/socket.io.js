@@ -25,7 +25,7 @@ var io = ('undefined' === typeof module ? {} : module.exports);
    * @api public
    */
 
-  io.version = '0.9.16';
+  io.version = '0.9.17';
 
   /**
    * Protocol implemented.
