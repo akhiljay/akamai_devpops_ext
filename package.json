@@ -1,13 +1,13 @@
 {
-  "name": "devpops",
-  "version": "2.1.0",
-  "homepage": "https://betajam.akamaioc.com",
-  "description": "Chrome extension which acts as task runner + browser proxy",
+  "name": "devpops_ext",
+  "version": "1.0.8",
+  "homepage": "https://github.com/akhilakamai/akamai_devpops_ext",
+  "description": "Chrome Dev Tools Extension for proxying requests and terminal access, credits to Yez extension and npm packages",
   "main": "./node/index.js",
   "author": {
     "name": "Akhil Jayaprakash",
     "email": "ajayapra@akamai.com",
-    "url": "http://betajam.akamaioc.com"
+    "url": "https://github.com/akhilakamai/akamai_devpops_ext"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,7 +15,7 @@
     "http-server": "0.9.0",
     "open": "0.0.5",
     "ps-tree": "0.0.3",
-    "socket.io": "0.9.16",
+    "socket.io": "0.9.17",
     "spawn-args": "0.0.2",
     "yargs": "4.6.0"
   },
@@ -36,7 +36,7 @@
     "url": ""
   },
   "bin": {
-    "yez": "./node/index.js"
+    "devpops_ext": "./node/index.js"
   },
   "scripts": {
     "test": "mocha ./node/tests --reporter spec",
