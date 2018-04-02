@@ -4,7 +4,7 @@
       "description": "The extension name."
     },
     "extDescription": {
-      "message": "A concept on how devpops API and Chrome proxy APIs can be used to create a UI for developers to deploy Akamai sandboxes for development",
+      "message": "An proof of concept extension for proxying chrome requests and accessing terminal via dev tools",
       "description": "The extension description."
     },
     "headerDirectConnection": {
