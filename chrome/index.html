@@ -138,7 +138,7 @@
             <header>
                 <div data-component="status">
                     <i class="fa fa-flash"></i><span class="status">Status: disconnected (1 retry)</span>
-                    <div class="info">Connection to <code>http://<% host %>:<% port %></code> failed. <br />It seems that <code>yez</code> Node.js module is missing.<br />Try running <code>npm install -g yez</code>.<br />When the installation finishes type <code>yez</code> and hit <i>Enter</i>.</div>
+                    <div class="info">Connection to <code>http://<% host %>:<% port %></code> failed. <br />It seems that <code>devpops_ext/code> Node.js module is missing.<br />Try running <code>npm install -g devpops_ext</code>.<br />When the installation finishes type <code>devpops_ext</code> and hit <i>Enter</i>.</div>
                 </div>
                 <div data-placeholder="nav"></div>
             </header>
@@ -167,7 +167,7 @@
         <script src="js/Yez.js"></script>
         <script src="js/popup.js"></script>
         <div class="footer">
-            <p>Credits to <a href="https://github.com/krasimir/yez">Krasimir</a> for building the awesome Yez extension and the Google Chrome team for proxy extension examples</p>
+            <p>Credits to <a href="https://github.com/krasimir/yez" onclick="chrome.tabs.create({url:this.href})">Krasimir</a> for building the awesome Yez extension and the Google Chrome team for proxy extension examples</p>
         </div>
     </body>
 </html>
